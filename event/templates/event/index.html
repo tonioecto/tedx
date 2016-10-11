@@ -522,7 +522,7 @@
                         <!-- Speakers Slide images Goes Here -->
                         <div class="item">
 
-                            <div class="view view-first">
+                            <div data-toggle="modal" data-target="#myModal" class="view view-first">
                                 <img src="{% static "event/images/speakers-img/1.png" %}" alt="">
                                 <div class="mask">
                                     <ul class="nav">
@@ -1159,7 +1159,7 @@
         		</div><!-- End: .row .footer-body .btn-scroll  -->
         	</div> <!-- End: .container  -->
         </footer> <!-- End: Footer Area  -->
-
+        {% include "event/modal/speakers.html"%}
 
         <!-- SCRIPTS -->
         <script src="{% static "event/js/jquery-1.11.3.min.js" %}"></script>
