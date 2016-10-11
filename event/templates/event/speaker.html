@@ -1,0 +1,12 @@
+
+<html>
+  <body>
+    <div> Voici la liste des intervenants : </div>
+    {% for speaker in speakers %}
+    <div> {{speaker.name}} </div>
+    <div> {{speaker.description}}</div>
+    <img src= " {{speaker.image}} ">
+    {% endfor %}
+  </body>
+
+</html>
