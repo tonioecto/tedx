@@ -509,6 +509,7 @@
 
 
 
+
         <section class="speakers" id="section-4" ><!-- Start: Speakers Area, "SECTION-4" -->
             <div class="container">
                 <div class="row speakers-body col-md-12 col-lg-offset-1 col-lg-10" >
@@ -517,6 +518,7 @@
                         <h2>OUR SPEAKERS</h2><!-- Speakers Heading Goes Here -->
                     </div>
 
+
                     <div id="slider" class="wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s"><!-- Start: Slider Area -->
 
                         <!-- Speakers Slide images Goes Here -->
@@ -524,23 +526,23 @@
                         <div class="item">
 
                             <div data-toggle="modal" data-target="#myModal" class="view view-first">
-                                <img src="{% static "speaker.image" %}" alt="">
+                                <img src="{% static "event/images/speakers-img/1.png" %}" alt="">
                                 <div class="mask">
                                     <ul class="nav">
                                         <li><div> {{speaker.description}} </div></li>
 
                                     </ul>
 
-                                </div>
+                              </div>
                             </div>
                             <div class="clearfix"></div>
 
                             <h3>{{speaker.name}}</h3>
 
-
-                        </div>
                         {% endfor %}
-                      
+                        </div>
+
+
 
                     </div><!-- End: "slider" Area -->
 
