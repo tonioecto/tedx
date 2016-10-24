@@ -1,11 +1,21 @@
 
 <html>
   <body>
-    <div> Voici la liste des intervenants : </div>
+    <div> Voici la liste des intervenants de cette annee : </div>
     {% for speaker in speakers %}
     <div> {{speaker.name}} </div>
     <div> {{speaker.description}}</div>
-    <img src= " {{speaker.image}} ">
+    <img src= "{{speaker.image}} ">
+    {% endfor %}
+    {% for year in years   %}
+      <div> Voici les intervenants de l'annee {{year.year}} </div>
+
+      {% for speaker in prevSpeakers %}
+        {% if speaker.year == year.year %}
+          <div> {{speaker.name}} </div>
+          <div> {{speaker.description}}</div>
+        {% endif %}
+      {% endfor%}
     {% endfor %}
   </body>
 
