@@ -7,4 +7,6 @@ def index(request):
 
 def speaker(request):
     speakers= Speaker.objects.all()
-    return render(request, "event/speaker.html",{'speakers':speakers})
+    prevSpeakers=PreviousSpeaker.objects.all()
+    years=PreviousSpeaker.objects.values('year').distinct()
+    return render(request, "event/speaker.html",{'speakers':speakers,'prevSpeakers':prevSpeakers,'years':years})
