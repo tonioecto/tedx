@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
     url(r'^speaker$', views.speaker, name='speaker'),
-    url(r'^(?P<name>[a-z]+)',views.speakerPage,name='speakerPage'),
+    url(r'^(?P<name>[a-z]+)$',views.speakerPage,name='speakerPage'),
+    url(r'^prev/(?P<name>[a-z]+)$',views.prevSpeakerPage,name='prevSpeakerPage'),
 ]

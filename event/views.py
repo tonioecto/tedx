@@ -18,3 +18,7 @@ def speaker_list():
 def speakerPage(request, name):
     speaker=get_object_or_404(Speaker, name=name)
     return render(request,'event/speakerPage.html',{'speaker':speaker})
+
+def prevSpeakerPage(request, name):
+    speaker=get_object_or_404(PreviousSpeaker, name=name)
+    return render(request,'event/speakerPage.html',{'speaker':speaker})

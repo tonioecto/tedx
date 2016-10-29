@@ -3,7 +3,7 @@
   <body>
     <div> Voici la liste des intervenants de cette annee : </div>
     {% for speaker in speakers %}
-    <div> {{speaker.name}} </div>
+    <div> <a href="{% url 'speakerPage' speaker.name %}"> {{speaker.name}} </a> </div>
     <div> {{speaker.description}}</div>
     <img src= "{{speaker.image}} ">
     {% endfor %}
@@ -12,7 +12,7 @@
 
       {% for speaker in prevSpeakers %}
         {% if speaker.year == year.year %}
-          <div> {{speaker.name}} </div>
+          <div>  <a href="{% url 'prevSpeakerPage' speaker.name %}"> {{speaker.name}} </a> </div>
           <div> {{speaker.description}}</div>
         {% endif %}
       {% endfor%}
