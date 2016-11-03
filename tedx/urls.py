@@ -16,10 +16,14 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from event import views
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
     url(r'^speaker$', views.speaker, name='speaker'),
-    url(r'^(?P<name>[a-z]+)',views.speakerPage,name='speakerPage'),
+    url(r'^(?P<name>[a-z]+)$',views.speakerPage,name='speakerPage'),
+    url(r'^prev/(?P<name>[a-z]+)$',views.prevSpeakerPage,name='prevSpeakerPage'),
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

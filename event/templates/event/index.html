@@ -525,8 +525,8 @@
                         {% for speaker in speakers %}
                         <div class="item">
 
-                            <div data-toggle="modal" data-target="#myModal" class="view view-first">
-                                <img src="{% static "event/images/speakers-img/1.png" %}" alt="">
+                            <div data-toggle="modal" data-target=#{{speaker.id}} class="view view-first">
+                                <img src="{{speaker.image.url}}" />
                                 <div class="mask">
                                     <ul class="nav">
                                         <li><div> {{speaker.description}} </div></li>
