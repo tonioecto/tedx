@@ -1279,8 +1279,37 @@ a.prev:hover {
   -o-transition: all 0.8s;
 }
 
+/*
+ici commencent les changements que j'ai rajoute par rapport au modal bootsrap
+*/
+
 #modalTitle
 {
   color:red;
   font-weight: bold;
+}
+#sliderContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.speaker img{
+  width: 230px;
+  height: auto;
+}
+
+#yearContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+#speakerTitle
+{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  justify-content: center;
+  text-align: center;
 }
