@@ -1313,3 +1313,6 @@ ici commencent les changements que j'ai rajoute par rapport au modal bootsrap
   justify-content: center;
   text-align: center;
 }
+#speakerName{
+  margin-top:100px;
+}
