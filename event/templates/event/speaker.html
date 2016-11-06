@@ -134,7 +134,7 @@
         <section class="speakers" id="section-4" ><!-- Start: Speakers Area, "SECTION-4" -->
           <div id = "yearContainer">
             <div id ="speakerTitle"> Voici la liste des intervenants de cette annee : </div>
-            <div id="sliderContainer">
+            <div id="speakerContainer">
               {% for speaker in speakers %}
               <div class="speaker"> <a href="{% url 'speakerPage' speaker.name %}"> {{speaker.name}} </a>
                 <div> {{speaker.resume}}</div>
@@ -144,7 +144,7 @@
             </div>
             {% for year in years   %}
             <div id ="speakerTitle"> Voici les intervenants de l'annee {{year.year}} </div>
-            <div id="sliderContainer">
+            <div id="speakerContainer">
               {% for speaker in prevSpeakers %}
                 {% if speaker.year == year.year %}
                   <div class="speaker">  <a href="{% url 'prevSpeakerPage' speaker.name %}"> {{speaker.name}} </a>

@@ -1292,7 +1292,22 @@ ici commencent les changements que j'ai rajoute par rapport au modal bootsrap
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: space-around;
+  margin:auto;
+  align-items: flex-start;
+}
+#sliderContainer img{
+  width: 200px;
+  height: auto;
+}
+#speakerContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin:auto;
 
 }
 .speaker img{

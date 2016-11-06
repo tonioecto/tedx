@@ -4,7 +4,7 @@ db.sqlite3
 **/__pycache__
 *.swp
 /media
-/myvenv
+/myvenv/*
 /venv
 secret.key
 my.cnf
