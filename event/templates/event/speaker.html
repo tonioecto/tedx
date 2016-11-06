@@ -137,7 +137,7 @@
             <div id="sliderContainer">
               {% for speaker in speakers %}
               <div class="speaker"> <a href="{% url 'speakerPage' speaker.name %}"> {{speaker.name}} </a>
-                <div> {{speaker.description}}</div>
+                <div> {{speaker.resume}}</div>
                 <img src="{{speaker.image.url}}" />
               </div>
               {% endfor %}
@@ -148,7 +148,7 @@
               {% for speaker in prevSpeakers %}
                 {% if speaker.year == year.year %}
                   <div class="speaker">  <a href="{% url 'prevSpeakerPage' speaker.name %}"> {{speaker.name}} </a>
-                    <div> {{speaker.description}}</div>
+                    <div> {{speaker.resume}}</div>
                     <img src="{{speaker.image.url}}" />
                   </div>
                 {% endif %}
