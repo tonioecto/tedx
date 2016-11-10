@@ -12,13 +12,12 @@ def speaker(request):
     years=PreviousSpeaker.objects.values('year').distinct()
     return render(request, "event/speaker.html",{'speakers':speakers,'prevSpeakers':prevSpeakers,'years':years})
 
-def speaker_list():
-    return Speaker.objects.all()
 
-def speakerPage(request, name):
-    speaker=get_object_or_404(Speaker, name=name)
+
+def speakerPage(request, id):
+    speaker=get_object_or_404(Speaker, id=id)
     return render(request,'event/speakerPage.html',{'speaker':speaker})
 
-def prevSpeakerPage(request, name):
-    speaker=get_object_or_404(PreviousSpeaker, name=name)
+def prevSpeakerPage(request, id):
+    speaker=get_object_or_404(PreviousSpeaker, id=id)
     return render(request,'event/speakerPage.html',{'speaker':speaker})

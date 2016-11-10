@@ -136,7 +136,7 @@
             <div id ="speakerTitle"> Voici la liste des intervenants de cette annee : </div>
             <div id="speakerContainer">
               {% for speaker in speakers %}
-              <div class="speaker"> <a href="{% url 'speakerPage' speaker.name %}"> {{speaker.name}} </a>
+              <div class="speaker"> <a href="{% url 'speakerPage' speaker.id %}"> {{speaker.name}} </a>
                 <div> {{speaker.resume}}</div>
                 <img src="{{speaker.image.url}}" />
               </div>
@@ -147,7 +147,7 @@
             <div id="speakerContainer">
               {% for speaker in prevSpeakers %}
                 {% if speaker.year == year.year %}
-                  <div class="speaker">  <a href="{% url 'prevSpeakerPage' speaker.name %}"> {{speaker.name}} </a>
+                  <div class="speaker">  <a href="{% url 'prevSpeakerPage' speaker.id %}"> {{speaker.name}} </a>
                     <div> {{speaker.resume}}</div>
                     <img src="{{speaker.image.url}}" />
                   </div>

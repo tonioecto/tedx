@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
     url(r'^speaker$', views.speaker, name='speaker'),
-    url(r'^(?P<name>[a-z]+)$',views.speakerPage,name='speakerPage'),
-    url(r'^prev/(?P<name>[a-z]+)$',views.prevSpeakerPage,name='prevSpeakerPage'),
+    url(r'^(?P<id>[0-9]+)$',views.speakerPage,name='speakerPage'),
+    url(r'^prev/(?P<id>[0-9]+)$',views.prevSpeakerPage,name='prevSpeakerPage'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

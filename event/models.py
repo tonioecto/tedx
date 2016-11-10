@@ -6,6 +6,7 @@ class Speaker(models.Model):
     description = models.TextField("Description", blank=True)
     resume=models.CharField("Une description rapide", max_length=254, blank=True)
     image = models.FileField("Image :", upload_to='assets/media/media/speakers')
+    heure= models.CharField("Heure de passage",max_length=100,blank=True)
     def __str__(self):              # __unicode__ on Python 2
         return self.name
 
