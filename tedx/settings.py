@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import base64
+import os.path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -18,14 +20,21 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
+secretkey_file=os.path.join(BASE_DIR, "secret.key")
+if not os.path.isfile(secretkey_file):
+    with open(secretkey_file, "wb") as f:
+        f.write(base64.b64encode(os.urandom(20)))
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'jk8gab@xxe+-ef9m=@^4n**a!$h(yd$sw@+pc&60dq$8-ut+qp'
+with open(secretkey_file,"r") as f:
+    SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -119,3 +128,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT=os.path.join(BASE_DIR, "assets/media/")
+MEDIA_URL='/assets/media/'

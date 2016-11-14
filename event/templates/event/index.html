@@ -2,12 +2,12 @@
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en">
+<html lang="fr">
 {%load static %}
     <head>
 
         <!-- TITLE OF SITE -->
-        <title> EVENTER | Event Landing Page</title>
+        <title> TEDxEcolePolytechnique</title>
 
 
         <meta charset="utf-8">
@@ -171,8 +171,14 @@
                     <!-- Start: About-Our-Event Left Area  -->
         			<div class="about-our-event-left col-md-5 wow fadeInLeft animated" data-wow-offset="120" data-wow-duration="1.5s">
                         <div class="about-our-event-left-body">
-            				<h2>ABOUT OUR EVENT</h2>
-            				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorp eu feugiat nulla facilisis atter liberty.</p>
+            				<h2> A PROPOS</h2>
+                    <h3 > Notre Evènement </h3>
+            				<p >Description de TEDx 2017</p>
+                    <h3 > TEDxPolytechnique</h3>
+            				<p>
+                      TEDxEcolePolytechnique est une association étudiante, créée en 2014 par des élèves de l’école polytechnique. Elle est née de la rencontre de passionnés, unis dans leur volonté de partager leur amour des idées. Nous partageons le but et la devise de l’organisme TED: faire entendre à travers le monde ceux qui ont des idées originales, ceux qui veulent nous faire réfléchir, ceux qui peuvent changer notre vie.
+                      Après le succès de la première conférence en avril 2015 sur le thème de l’anticipation, nous avons choisi cette année la thématique de la rupture.
+                    </p>
                         </div>
         			</div>
                     <!-- End: About-Our-Event Left Area  -->
@@ -182,8 +188,8 @@
                         <div class="container-fluid">
                             <div class="row about-our-event-right-body">
         		        		<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 background time">
-        							<span class="counter style-all">15</span>
-        							<span class="title">Speakers</span>
+        							<span class="counter style-all">8</span>
+        							<span class="title">Intervenants</span>
         						</div>
         						<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 background time">
         							<span class="counter style-all">35</span>
@@ -509,101 +515,35 @@
 
 
 
+
         <section class="speakers" id="section-4" ><!-- Start: Speakers Area, "SECTION-4" -->
             <div class="container">
                 <div class="row speakers-body col-md-12 col-lg-offset-1 col-lg-10" >
-
                     <div class="wow fadeInDown animated" data-wow-offset="120" data-wow-duration="1.5s">
-                        <h2>OUR SPEAKERS</h2><!-- Speakers Heading Goes Here -->
+                        <h2> <a href= "{% url 'speaker' %}" style="text-decoration : none; color: red; "> OUR SPEAKERS</a> </h2><!-- Speakers Heading Goes Here -->
                     </div>
-
-                    <div id="slider" class="wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s"><!-- Start: Slider Area -->
-
+                    <!-- Start: Slider Area -->
+                    <div id="sliderContainer">
                         <!-- Speakers Slide images Goes Here -->
-                        <div class="item">
-
-                            <div data-toggle="modal" data-target="#myModal" class="view view-first">
-                                <img src="{% static "event/images/speakers-img/1.png" %}" alt="">
-                                <div class="mask">
-                                    <ul class="nav">
-                                        <li><a href="#"> <i class="fa facebook fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa twitter fa-twitter"></i> </a></li>
-                                        <li><a href="#"> <i class="fa skype fa-skype"></i> </a></li>
-                                        <li><a href="#"> <i class="fa rss fa-rss "></i> </a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-
-                            <h3>Anjel Gorina</h3>
-                            <p>CEO, DeviserWeb</p>
-
-                        </div>
-                        <div class="item">
-                            <div class="view view-first">
-                                <img src="{% static "event/images/speakers-img/2.png" %}" alt="">
-                                <div class="mask">
-                                    <ul class="nav">
-                                        <li><a href="#"> <i class="fa facebook fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa twitter fa-twitter"></i> </a></li>
-                                        <li><a href="#"> <i class="fa skype fa-skype"></i> </a></li>
-                                        <li><a href="#"> <i class="fa rss fa-rss "></i> </a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-
-                            <h3>David Jones</h3>
-                            <p>CEO, DeviserWeb</p>
-
-                        </div>
-                        <div class="item">
-
-                            <div class="view view-first">
-                                <img src="{% static "event/images/speakers-img/1.png" %}" alt="">
-                                <div class="mask">
-                                    <ul class="nav">
-                                        <li><a href="#"> <i class="fa facebook fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa twitter fa-twitter"></i> </a></li>
-                                        <li><a href="#"> <i class="fa skype fa-skype"></i> </a></li>
-                                        <li><a href="#"> <i class="fa rss fa-rss "></i> </a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-
-                            <h3>Kulsum Doe</h3>
-                            <p>CEo, DeviserWeb</p>
-
-                        </div>
-                        <div class="item">
-
-                            <div class="view view-first">
-                                <img src="{% static "event/images/speakers-img/2.png" %}" alt="">
-                                <div class="mask">
-                                    <ul class="nav">
-                                        <li><a href="#"> <i class="fa facebook fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa twitter fa-twitter"></i> </a></li>
-                                        <li><a href="#"> <i class="fa skype fa-skype"></i> </a></li>
-                                        <li><a href="#"> <i class="fa rss fa-rss "></i> </a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-
-                            <h3>Mitrel Lord</h3>
-                            <p>CEO, DeviserWeb</p>
-
-                        </div>
-
+                        {% for speaker in speakers %}
+                        <!--<div id="slider" class="wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s">-->
+                          <div class="item">
+                              <div data-toggle="modal" data-target=#{{speaker.id}} class="view view-first">
+                                  <img src="{{speaker.image.url}}" />
+                                  <div class="mask">
+                                      <ul class="nav">
+                                          <li ><div class="interface"> {{speaker.resume}} </div></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="clearfix"></div>
+                              <h3>{{speaker.name}}</h3>
+                          </div>
+                        <!--</div>-->
+                        {% endfor %}
                     </div><!-- End: "slider" Area -->
-
-                </div><!-- Start: Speakers Body Area -->
-            </div><!-- End:  "container"-->
+                </div><!-- Start: Speakers Body Area --><!-- End:  "container"-->
+              </div>
         </section><!-- End: Speakers Area, "SECTION-4" -->
 
 
@@ -803,172 +743,17 @@
 
 
 
-        <section class="sponsore" id="section-7" ><!-- Start: Sponsore Area, "#SECTION-7" -->
-            <div class="container">
-                <div class="row sponsore-body col-md-12 col-lg-12 "><!-- Start: Sponsore Body Area -->
-
-
-                    <div class="wow fadeInDown animated" data-wow-offset="120" data-wow-duration="1.5s">
-                        <h2>OUR SPONSORS</h2><!-- Sponsore Heading Goes Here -->
-                    </div>
-
-                    <!-- Start: Images Area -->
-                    <div class="wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s">
-						<div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
-							<img src="{% static "event/images/sponsors-img/1.png" %}" alt="Sponsors" class="img-responsive">
-						</div>
-						<div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
-							<img src="{% static "event/images/sponsors-img/2.png" %}" alt="Sponsors" class="img-responsive">
-						</div>
-						<div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
-							<img src="{% static "event/images/sponsors-img/1.png" %}" alt="Sponsors" class="img-responsive">
-						</div>
-						<div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
-							<img src="{% static "event/images/sponsors-img/2.png" %}" alt="Sponsors" class="img-responsive">
-						</div>
-
-                        <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
-                            <img src="{% static "event/images/sponsors-img/1.png" %}" alt="Sponsors" class="img-responsive">
-                        </div>
-                        <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
-                            <img src="{% static "event/images/sponsors-img/2.png" %}" alt="Sponsors" class="img-responsive">
-                        </div>
-                        <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
-                            <img src="{% static "event/images/sponsors-img/1.png" %}" alt="Sponsors" class="img-responsive">
-                        </div>
-                        <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
-                            <img src="{% static "event/images/sponsors-img/2.png" %}" alt="Sponsors" class="img-responsive">
-                        </div>
-                    </div><!-- End: Images Area -->
-
-
-                </div><!-- Start: Sponsore Body Area -->
-            </div><!-- End: .container  -->
-        </section><!-- End: Sponsore Area, "#SECTION-7" -->
 
 
 
-        <section class="collapse-area" id="section-8"> <!-- Start: Collapse Area, "#SECTION-8" -->
-            <div class="container">
-                <div class="row">
 
-                    <!--  Start: Collapse Area Left   -->
-                    <div class="collapse-left col-sm-12 col-md-4 col-lg-4 hidden-xs hidden-sm fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s">
-                        <img src="{% static "event/images/collapse.jpg" %}" alt="" class="">
-                    </div>
-                    <!--  End: Collapse Area Left  -->
-
-
-                    <!-- Start: Collapse Area Right  -->
-                    <div class="collapse-right col-sm-12 col-md-offset-1 col-md-7 col-lg-offset-1 col-lg-7">
-
-                        <h2 class="wow fadeInDown animated" data-wow-offset="120" data-wow-duration="1.5s">Freaquently Asked Question</h2><!-- Collapse Title Goes Here  -->
-
-                        <!--  Start: Collapse-tab  -->
-                        <div class="collapse-tab ">
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s" id="panel1"><!-- Start: Tab-1 -->
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-
-                                            <!-- Tab-1 Title Goes Here  -->
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="">
-                                                What if I need to cancel my booking at late notice?
-                                                <span class="bar hidden-xs"></span>
-                                            </a>
-
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in">
-
-                                        <!-- Tab-1 Detail Goes Here  -->
-                                        <div class="panel-body">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorp eu feugiat nulla facilisis at vero eros et accumsan et iusto odior
-                                        </div>
-
-                                    </div>
-                                </div><!-- End: Tab-1 -->
-                                <div class="panel panel-default wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s" id="panel2"><!-- Start: Tab-2 -->
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-
-                                            <!-- Tab-1 Title Goes Here  -->
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
-                                                Which payment methods do you accept?
-                                                <span class="bar hidden-xs"></span>
-                                            </a>
-
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse">
-
-                                        <!-- Tab-2 Detail Goes Here  -->
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3.
-                                        </div>
-
-                                    </div>
-                                </div><!-- End: Tab-2 -->
-                                <div class="panel panel-default wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s" id="panel3"><!-- Start: Tab-3 -->
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-
-                                            <!-- Tab-3 Title Goes Here  -->
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
-                                                I'd like to buy 5 tickets, is there bulk pricing?
-                                                <span class="bar hidden-xs"></span>
-                                            </a>
-
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse">
-
-                                        <!-- Tab-3 Detail Goes Here  -->
-                                        <div class="panel-body">
-                                           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3.
-                                        </div>
-
-                                    </div>
-                                </div><!-- End: Tab-3 -->
-                                <div class="panel panel-default wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s" id="panel4"><!-- Start: Tab-4 -->
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-
-                                            <!-- Tab-4 Title Goes Here  -->
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">
-                                                What if I need to cancel my booking at late notice?
-                                                <span class="bar hidden-xs"></span>
-                                            </a>
-
-                                        </h4>
-                                    </div>
-                                    <div id="collapseFour" class="panel-collapse collapse">
-
-                                        <!-- Tab-4 Detail Goes Here  -->
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3.
-                                        </div>
-
-                                    </div>
-                                </div><!-- End: Tab-4 -->
-
-                            </div> <!-- End: .panel-group  -->
-                        </div><!--  End: .collapse-tab  -->
-
-                    </div>
-                    <!-- End: Collapse Area Right  -->
-
-
-                </div> <!-- End: .row  -->
-            </div> <!-- End: .container  -->
-        </section> <!-- End: Collapse Area, "#SECTION-8" -->
 
 
 
         <section class="scedule testimonial" id="section-9"> <!-- End: Testimonial Area, "#SECTION-9" -->
             <div class="container">
                 <div class="testimonial-body scedule-body ">
-
+                    <h2> LE PLANNING </h2>
                     <div role="tabpanel" class="tab-pane active wow fadeInUp animated" data-wow-offset="10" data-wow-duration="1.5s" id="testimonial-1">
 
                         <div class="dropdown">
@@ -977,67 +762,15 @@
 
                             <!-- Nav tabs -->
                             <ul class="nav nav-cus col-md-4" role="tablist"  id="nav-ul-testimonial">
+                              {% for speaker in speakers %}
                                 <li role="presentation" class="active">
                                     <a href="#nav-testimonial-1" aria-controls="nav-testimonial-1" role="tab" data-toggle="tab">
-                                        <span class="nav-header">Jennifer Doe</span>
+                                        <span class="nav-header">{{speaker.name}}</span>
                                         <span class="nav-time">09:30am - 11:30am</span>
                                     </a>
                                 </li>
-                                <li role="presentation" class="">
-                                    <a href="#nav-testimonial-2" aria-controls="nav-testimonial-2" role="tab" data-toggle="tab">
-                                        <span class="nav-header">Mitrel Lord</span>
-                                        <span class="nav-time">11:30am - 1pm</span>
-                                    </a>
-                                </li>
-                                <li role="presentation" class="">
-                                    <a href="#nav-testimonial-3" aria-controls="nav-testimonial-3" role="tab" data-toggle="tab">
-                                        <span class="nav-header">Kulsum Doe</span>
-                                        <span class="nav-time">09:30am - 11:30am</span>
-                                    </a>
-                                </li>
-                                <li role="presentation" class="">
-                                    <a href="#nav-testimonial-4" aria-controls="nav-testimonial-4" role="tab" data-toggle="tab">
-                                        <span class="nav-header">David Jones</span>
-                                        <span class="nav-time">09:30am - 11:30am</span>
-                                    </a>
-                                </li>
+                              {% endfor %}
                             </ul>
-                        </div>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content col-md-8">
-                            <div role="tabpanel" class="tab-pane active fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s" id="nav-testimonial-1">
-
-                                <img src="{% static "event/images/testimonial-1.jpg" %}" alt="" class="testimonial-img img-circle">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorp eu feugiat nulla facilisis at vero eros et accumsan</p>
-                                <h3>Jennifer Doe</h3>
-                                <p>Creative Director of DeviserWeb</p>
-
-                            </div>
-                            <div role="tabpanel" class="tab-pane fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s" id="nav-testimonial-2">
-
-                                <img src="{% static "event/images/testimonial-1.jpg" %}" alt="" class="testimonial-img img-circle">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorp eu feugiat nulla facilisis at vero eros et accumsan</p>
-                                <h3>Mitrel Lord</h3>
-                                <p>Creative Director of DeviserWeb</p>
-
-                            </div>
-                            <div role="tabpanel" class="tab-pane fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s" id="nav-testimonial-3">
-
-                                <img src="{% static "event/images/testimonial-1.jpg" %}" alt="" class="testimonial-img img-circle">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorp eu feugiat nulla facilisis at vero eros et accumsan</p>
-                                <h3>Kulsum Doe</h3>
-                                <p>Creative Director of DeviserWeb</p>
-
-                            </div>
-                            <div role="tabpanel" class="tab-pane wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s" id="nav-testimonial-4">
-
-                                <img src="{% static "event/images/testimonial-2.jpg" %}" alt="" class="testimonial-img img-circle">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorp eu feugiat nulla facilisis at vero eros et accumsan</p>
-                                <h3>David Jones</h3>
-                                <p>Creative Director of DeviserWeb</p>
-
-                            </div>
                         </div>
 
                     </div><!--  End: .tabpanel  -->
@@ -1108,9 +841,9 @@
         			<div class="contact-us-left col-md-4 fadeInRight animated" data-wow-offset="120" data-wow-duration="1.5s">
 
         				<h2>Venue info</h2>
-        				<p><span class="bold">Address:</span> Eventer, one caspian point, pierhead street cardiff waterside, cf10 4dq</p>
-        				<p><span class="bold">Contact: </span><a href="callto:+8801740376995">+880 174 037 6995</a></p>
-        				<p><span class="bold">Mail: </span><a href="mailto:as@deviserweb.com">as@deviserweb.com</a></p>
+        				<p><span class="bold">Adresse:</span> Ecole Polytechnique,Amphithéâtre Poincaré</p>
+        				<p><span class="bold">Contact: </span><a href="callto:+8801740376995">+33 6</a></p>
+        				<p><span class="bold">Mail: </span><a href="mailto:admin@admin.com">admin@admin.com</a></p>
 
                         <!-- Social Icon Goes Here  -->
                         <div class="social-icon">
@@ -1140,6 +873,49 @@
         	</div> <!--  End: .container  -->
         </section> <!-- End: Contact Us Area, "#SECTION-11" -->
 
+
+        <section class="sponsore" id="section-12" ><!-- Start: Sponsore Area, "#SECTION-7" -->
+            <div class="container">
+                <div class="row sponsore-body col-md-12 col-lg-12 "><!-- Start: Sponsore Body Area -->
+
+
+                    <div class="wow fadeInDown animated" data-wow-offset="120" data-wow-duration="1.5s">
+                        <h2>NOS SPONSORS</h2><!-- Sponsore Heading Goes Here -->
+                    </div>
+
+                    <!-- Start: Images Area -->
+                    <div class="wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s">
+            <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
+              <img src="{% static "event/images/sponsors-img/1.png" %}" alt="Sponsors" class="img-responsive">
+            </div>
+            <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
+              <img src="{% static "event/images/sponsors-img/2.png" %}" alt="Sponsors" class="img-responsive">
+            </div>
+            <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
+              <img src="{% static "event/images/sponsors-img/1.png" %}" alt="Sponsors" class="img-responsive">
+            </div>
+            <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
+              <img src="{% static "event/images/sponsors-img/2.png" %}" alt="Sponsors" class="img-responsive">
+            </div>
+
+                        <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
+                            <img src="{% static "event/images/sponsors-img/1.png" %}" alt="Sponsors" class="img-responsive">
+                        </div>
+                        <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
+                            <img src="{% static "event/images/sponsors-img/2.png" %}" alt="Sponsors" class="img-responsive">
+                        </div>
+                        <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
+                            <img src="{% static "event/images/sponsors-img/1.png" %}" alt="Sponsors" class="img-responsive">
+                        </div>
+                        <div class="sponsors-logo col-lg-3 com-md-3 col-sm-3 col-xs-6">
+                            <img src="{% static "event/images/sponsors-img/2.png" %}" alt="Sponsors" class="img-responsive">
+                        </div>
+                    </div><!-- End: Images Area -->
+
+
+                </div><!-- Start: Sponsore Body Area -->
+            </div><!-- End: .container  -->
+        </section><!-- End: Sponsore Area, "#SECTION-7" -->
 
 
         <footer class="footer"> <!-- Start: Footer Area  -->

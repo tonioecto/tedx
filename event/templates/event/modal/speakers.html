@@ -1,0 +1,23 @@
+
+<!-- Modal -->
+{% for speaker in speakers %}
+<div class="modal fade" id="{{speaker.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 id ="modalTitle"> {{speaker.name}} </h3>
+      </div>
+          <h4> {{speaker.resume}} </h4>
+          <div class="modal-body">
+              {{speaker.description}}
+          </div>
+      <div class="modal-footer">
+         <a href="{% url 'speakerPage' speaker.id %}"> plus d'infos </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
