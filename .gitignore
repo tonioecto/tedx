@@ -1,6 +1,10 @@
 db.sqlite3
 /assets/
-*.pyc.*
-**/__pycache__*
+*.pyc
+**/__pycache__
 *.swp
 /media
+/myvenv/*
+/venv
+secret.key
+my.cnf
