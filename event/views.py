@@ -1,9 +1,23 @@
-from django.shortcuts import render
+
+from django.shortcuts import get_object_or_404, render
 from .models import *
-# Create your views here.
+# Create your views he#re.
 def index(request):
-    return(render(request, "event/index.html"))
+    speakers= Speaker.objects.all()
+    return(render(request, "event/index.html",{'speakers':speakers}))
 
 def speaker(request):
     speakers= Speaker.objects.all()
-    return render(request, "event/speaker.html",{'speakers':speakers})
+    prevSpeakers=PreviousSpeaker.objects.all()
+    years=PreviousSpeaker.objects.values('year').distinct()
+    return render(request, "event/speaker.html",{'speakers':speakers,'prevSpeakers':prevSpeakers,'years':years})
+
+
+
+def speakerPage(request, id):
+    speaker=get_object_or_404(Speaker, id=id)
+    return render(request,'event/speakerPage.html',{'speaker':speaker})
+
+def prevSpeakerPage(request, id):
+    speaker=get_object_or_404(PreviousSpeaker, id=id)
+    return render(request,'event/speakerPage.html',{'speaker':speaker})

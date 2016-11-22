@@ -15,8 +15,8 @@
  ********************************
  *
  *  Defult CSS
- *  
- *  
+ *
+ *
  */
 body {
   overflow-x: hidden !important;
@@ -66,7 +66,6 @@ h3 {
 }
 .btn-group,
 .our-featured-speaker-right p,
-.about-our-event-left p,
 .social-icon,
 .twitter-posts-body p .our-featured-speaker-body,
 .speakers-body,
@@ -215,8 +214,8 @@ h3 {
  ********************************
  *
  *  Header CSS
- *  
- *  
+ *
+ *
  */
 .header-background {
   background: url('../images/bg-1.jpg') top center fixed;
@@ -420,8 +419,8 @@ h3 {
  ********************************
  *
  *  About Our Event CSS
- *  
- *  
+ *
+ *
  */
 .about-our-event {
   position: relative;
@@ -475,8 +474,8 @@ h3 {
  ********************************
  *
  *  our featured speaker CSS
- *  
- *  
+ *
+ *
  */
 .our-featured-speaker {
   background: #f5f6f8;
@@ -503,8 +502,8 @@ h3 {
  ********************************
  *
  *  Scedule CSS
- *  
- *  
+ *
+ *
  */
 .scedule-background {
   background: url('../images/bg-3.jpg') top center fixed;
@@ -574,8 +573,8 @@ h3 {
  ********************************
  *
  *  Speakers CSS
- *  
- *  
+ *
+ *
  */
 .speakers {
   background: #f5f6f8;
@@ -604,8 +603,8 @@ h3 {
  ********************************
  *
  *  Pricing Tables CSS
- * 
- *  
+ *
+ *
  */
 .pricing-tables {
   background: #ffffff;
@@ -678,8 +677,8 @@ h3 {
  ********************************
  *
  *  Register CSS
- * 
- * 
+ *
+ *
  */
 .register-background {
   background: url('../images/bg-4.jpg') top center fixed;
@@ -767,7 +766,7 @@ h3 {
  ********************************
  *
  *  Sponsore CSS
- *  
+ *
  */
 .sponsore {
   background: #ffffff;
@@ -786,8 +785,8 @@ h3 {
  ********************************
  *
  *  Collapse CSS
- *  
- *  
+ *
+ *
  */
 .collapse-area {
   background: #f5f6f8;
@@ -898,8 +897,8 @@ h3 {
  ********************************
  *
  *  Testimonial CSS
- *  
- *  
+ *
+ *
  */
 .testimonial {
   background: #ffffff;
@@ -936,8 +935,8 @@ h3 {
  ********************************
  *
  *  Twitter Posts
- *  
- *  
+ *
+ *
  */
 .twitter-background {
   background: url('../images/bg-3.jpg') top center fixed;
@@ -984,8 +983,8 @@ h3 {
  ********************************
  *
  *  Contact Us CSS
- *  
- *  
+ *
+ *
  */
 .contact-us {
   position: relative;
@@ -1100,7 +1099,7 @@ footer .btn-top:hover {
  ********************************
  *
  *  header CSS
- *  
+ *
  */
 .blog-header .heading h1 {
   text-transform: capitalize;
@@ -1113,7 +1112,7 @@ footer .btn-top:hover {
  ********************************
  *
  *  Blog Body CSS
- *  
+ *
  */
 /*     blog-post CSS     */
 .blog-body {
@@ -1230,7 +1229,7 @@ aside .cate-all {
 ******************************************
 *
 *   OWL CAROUSEL CUSTOM CSS
-*    
+*
 */
 .owl-carousel {
   display: block !important;
@@ -1262,7 +1261,7 @@ aside .cate-all {
 ******************************************
 *
 *   FLEX SLIDER CSS
-*    
+*
 */
 a.next,
 a.prev {
@@ -1277,4 +1276,77 @@ a.prev:hover {
   -moz-transition: all 0.8s;
   -webkit-transition: all 0.8s;
   -o-transition: all 0.8s;
+}
+
+/*
+ici commencent les changements que j'ai rajoute par rapport au modal bootsrap
+*/
+
+#modalTitle
+{
+  color:red;
+  font-weight: bold;
+}
+#sliderContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin:auto;
+  align-items: flex-start;
+}
+#sliderContainer img{
+  width: 200px;
+  height: auto;
+}
+#speakerContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin:auto;
+
+}
+.speaker img{
+  width: 230px;
+  height: auto;
+}
+
+.speaker{
+  margin-left:30px;
+  margin-top :20px;
+}
+
+#yearContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+#speakerTitle
+{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  justify-content: center;
+  text-align: center;
+}
+#speakerName{
+  margin-top:100px;
+}
+
+.interface{
+  margin: auto;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+#linkSpeaker{
+  color: red;
+}
+.about-our-event-left-body p{
+  margin-top: 10px;
+  text-align: justify;
+  
+
 }

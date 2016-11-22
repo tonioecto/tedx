@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
@@ -86,76 +85,53 @@
 
 
         <header class="header-background header" id="header" data-stellar-background-ratio="0.5"> <!--Start: "Header Area"-->
-            <div class="fix header-overlay overlay-color">
+            <div class="fix header-overlay overlay-color"><div>
 
-                <!-- Start: Navbar Area  -->
-                <div class="header-navbar navbar-fixed-top" id="header-navbar">
-                    <nav class="navbar navbar-inverse">
-                        <div class="container">
-                            <div class="navbar-header">
+              <!-- Start: Navbar Area  -->
+              <div class="header-navbar navbar-fixed-top" id="header-navbar">
+                  <nav class="navbar navbar-inverse">
+                      <div class="container">
+                          <div class="navbar-header">
 
-                                <!-- Show in Mobile -->
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                    <span class="icon-bar icon-close-1"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar icon-close-2"></span>
-                                </button>
+                              <!-- Show in Mobile -->
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                  <span class="icon-bar icon-close-1"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar icon-close-2"></span>
+                              </button>
 
-                                <!-- Your Icon Goes Here -->
-                                <a class="navbar-brand" href="index.html">
-                                    <img src="{% static "event/images/logo.png" %}" class="img-responsive" alt="">
-                                </a>
+                              <!-- Your Icon Goes Here -->
+                              <a class="navbar-brand" href="index.html">
+                                  <img src="{% static "event/images/logo.png" %}" class="img-responsive" alt="">
+                              </a>
 
-                            </div>
+                          </div>
 
-                            <!-- Show in Dexktop -->
-                            <button type="button" class="navbar-toggle navbar-cus hidden-xs " id="navbar-cus"  style="padding-right= 0px">
-                                <span class="lines"></span>
-                            </button>
+                          <!-- Show in Dexktop -->
+                          <button type="button" class="navbar-toggle navbar-cus hidden-xs " id="navbar-cus"  style="padding-right= 0px">
+                              <span class="lines"></span>
+                          </button>
 
-                            <!-- Navbar Option -->
-                            <div id="myNavbar">
-                                <ul id="navbar-nav" class="myNavbarUl nav navbar-nav navbar-right slideOutRight">
-                                    <li><a href="{% url 'index' %}">Home</a></li>
+                          <!-- Navbar Option -->
+                          <div id="myNavbar">
+                              <ul id="navbar-nav" class="myNavbarUl nav navbar-nav navbar-right slideOutRight">
+                                  <li><a href="{% url 'index' %}">Home</a></li>
+                                  <li><a href="{% url 'speaker' %}">All Speakers</a></li>
 
-                                </ul>
-                            </div>
-                        </div> <!-- End: container  -->
-                    </nav> <!-- End: navbar navbar-inverse  -->
-                </div>
-                <!-- End: Navbar Area  -->
-
-
-
+                              </ul>
+                          </div>
+                      </div> <!-- End: container  -->
+                  </nav> <!-- End: navbar navbar-inverse  -->
+              </div>
+              <!-- End: Navbar Area  -->
 
 
 
 
         <section class="speakers" id="section-4" ><!-- Start: Speakers Area, "SECTION-4" -->
-          <div id = "yearContainer">
-            <div id ="speakerTitle"> Voici la liste des intervenants de cette annee : </div>
-            <div id="speakerContainer">
-              {% for speaker in speakers %}
-              <div class="speaker"> <a href="{% url 'speakerPage' speaker.id %}"> {{speaker.name}} </a>
-                <div> {{speaker.resume}}</div>
-                <img src="{{speaker.image.url}}" />
-              </div>
-              {% endfor %}
-            </div>
-            {% for year in years   %}
-            <div id ="speakerTitle"> Voici les intervenants de l'annee {{year.year}} </div>
-            <div id="speakerContainer">
-              {% for speaker in prevSpeakers %}
-                {% if speaker.year == year.year %}
-                  <div class="speaker">  <a href="{% url 'prevSpeakerPage' speaker.id %}"> {{speaker.name}} </a>
-                    <div> {{speaker.resume}}</div>
-                    <img src="{{speaker.image.url}}" />
-                  </div>
-                {% endif %}
-              {% endfor%}
-            </div>
-            {% endfor %}
-          </div>
+          <div id="speakerName"> {{speaker.name}}</div>
+          <div> {{speaker.description}}</div>
+          <img src="{{speaker.image.url}}" />
         </section><!-- End: Speakers Area, "SECTION-4" -->
 
 
