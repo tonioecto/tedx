@@ -1347,6 +1347,17 @@ ici commencent les changements que j'ai rajoute par rapport au modal bootsrap
 .about-our-event-left-body p{
   margin-top: 10px;
   text-align: justify;
-  
 
+}
+#specSpeaker{
+  margin-top: 100px;
+  font-weight: bold;
+  color: red;
+  font-size: 50px;
+}
+
+#imgSpeaker{
+  width: 230px;
+  height: auto;
+  margin-bottom: 50px;
 }
