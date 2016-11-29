@@ -18,3 +18,9 @@ class PreviousSpeaker(models.Model):
     year=models.CharField("Annee ou le speaker est passe a tedx", max_length=30)
     def __str__(self):              # __unicode__ on Python 2
         return self.name
+
+class Participants(models.Model):
+    name=models.CharField("name",max_length=100)
+    email=models.EmailField("email",blank=True)
+    def __str__(self):              # __unicode__ on Python 2
+        return self.name
