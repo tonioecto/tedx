@@ -116,10 +116,9 @@
                                 <ul id="navbar-nav" class="myNavbarUl nav navbar-nav navbar-right slideOutRight">
                                     <li><a href="#header">Home</a></li>
                                     <li><a href="#section-1">About</a></li>
-                                    <li><a href="#section-3">Scedule</a></li>
-                                    <li><a href="#section-5">Price</a></li>
-                                    <li><a href="#section-11">Venue</a></li>
-                                    <li><a href="speaker.html">All Speakers</a></li>
+                                    <li><a href="#section-3">Planning</a></li>
+                                    <li><a href="#section-11">Contact</a></li>
+                                    <li><a href= "{% url 'speaker'%}">All Speakers</a></li>
                                 </ul>
                             </div>
                         </div> <!-- End: container  -->
@@ -529,7 +528,7 @@
                         </div>
 
                         <!-- Register Form Goes Here  -->
-                        <div class="col-sm-12 wow fadeInDown animated" data-wow-offset="120" data-wow-duration="1.5s">
+                        <div class="col-sm-12 wow fadeInDown animated" data-wow-offset="120" data-wow-duration="1.5s" >
 
                             <form id="register-form" action="particip" method="post" class="form input-group">
                                {% csrf_token %}
@@ -542,12 +541,10 @@
                                         </div>
 
                                         <div class="col-md-3 col-sm-6">
+                                          <label for="email"></label>
                                             <input name="email" id="email" class="form-cus form-control" type="email" placeholder="Email" >
                                         </div>
 
-                                        <div class="col-md-2 col-sm-6">
-                                            <input name="telephone" class="form-cus form-control" id="telephone" type="tel" placeholder="Telephone">
-                                        </div>
 
                                         <div class="clearfix visible-xs"></div>
 

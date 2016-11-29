@@ -9,7 +9,7 @@
     <head>
 
         <!-- TITLE OF SITE -->
-
+        <title> TEDxEcolePolytechnique</title>
 
 
         <meta charset="utf-8">
@@ -133,10 +133,10 @@
 
         <section class="speakers" id="section-4" ><!-- Start: Speakers Area, "SECTION-4" -->
           <div id = "yearContainer">
-            <div id ="speakerTitle"> Voici la liste des intervenants de cette annee : </div>
+            <div id ="speakerTitle"> Voici la liste des intervenants de cette année : </div>
             <div id="speakerContainer">
               {% for speaker in speakers %}
-              <div class="speaker"> <a href="{% url 'speakerPage' speaker.id %}"> {{speaker.name}} </a>
+              <div class="speaker" > <a href="{% url 'speakerPage' speaker.id %}" style="text-decoration : none; color:red; font-weight: bold; font-size:20px "> {{speaker.name}} </a>
                 <div> {{speaker.resume}}</div>
                 <img src="{{speaker.image.url}}" />
               </div>

@@ -3,6 +3,7 @@ from django.shortcuts import get_object_or_404, render
 from .models import *
 from .forms import Participant
 from django.http import HttpResponseRedirect
+from django.core.mail import send_mail, BadHeaderError
 # Create your views he#re.
 def index(request):
     speakers= Speaker.objects.all()
@@ -15,15 +16,16 @@ def speaker(request):
     return render(request, "event/speaker.html",{'speakers':speakers,'prevSpeakers':prevSpeakers,'years':years})
 
 def particip(request):
+    speakers= Speaker.objects.all()
     if request.method=='POST':
         form= Participant(request.POST)
-        form.is_valid()
-        if (form.cleaned_data["value"]=="1"):
-            p=Participants(name=form.cleaned_data["name"])
-            p.save()
-            return (render(request, "event/index.html",{'form':form}))
-        else:
-            return HttpResponseRedirect("https://www.facebook.com/")
+        if form.is_valid():
+            if (form.cleaned_data["value"]=="1"):
+                p=Participants(name=form.cleaned_data["name"],email=form.cleaned_data["email"])
+                p.save()
+                return (render(request, "event/index.html",{'speakers':speakers}))
+            else:
+                return HttpResponseRedirect("https://www.google.com")
 
 
 def speakerPage(request, id):

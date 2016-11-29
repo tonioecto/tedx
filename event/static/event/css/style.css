@@ -1310,13 +1310,14 @@ ici commencent les changements que j'ai rajoute par rapport au modal bootsrap
 
 }
 .speaker img{
-  width: 230px;
-  height: auto;
+  width: auto;
+  height: 300px;
 }
 
 .speaker{
   margin-left:30px;
   margin-top :20px;
+  margin-bottom: 30px;
 }
 
 #yearContainer{
@@ -1331,6 +1332,8 @@ ici commencent les changements que j'ai rajoute par rapport au modal bootsrap
   margin-bottom: 30px;
   justify-content: center;
   text-align: center;
+  font-size:30px;
+  font-weight: bold;
 }
 #speakerName{
   margin-top:100px;
