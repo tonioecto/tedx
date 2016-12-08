@@ -110,7 +110,7 @@ else:
     } 
 
 #https
-CSRF_COOKIE_SECURE=True
+CSRF_COOKIE_SECURE=False
 SESSION_COOKIE_SECURE=True
 
 # Password validation
