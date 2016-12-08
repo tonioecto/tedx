@@ -26,6 +26,8 @@ def particip(request):
                 return (render(request, "event/index.html",{'speakers':speakers}))
             else:
                 return HttpResponseRedirect("https://www.google.com")
+	else:
+		return HttpResponseRedirect("https://www.google.com")	
 
 
 def speakerPage(request, id):
